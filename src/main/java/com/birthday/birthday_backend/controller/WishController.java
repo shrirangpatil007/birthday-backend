@@ -66,5 +66,10 @@ public class WishController {
         return wishRepository.findAll();
     }
 
+    @GetMapping("/api/ping")
+    public ResponseEntity<String> ping() {
+        return ResponseEntity.ok("pong");
+    }
+
 
 }
