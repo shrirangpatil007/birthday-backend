@@ -24,7 +24,7 @@ import lombok.RequiredArgsConstructor;
 @RestController
 @RequestMapping("/api/wishes")
 @RequiredArgsConstructor
-@CrossOrigin(origins = {"https://birthday-frontend.netlify.app/"})
+@CrossOrigin(origins = "https://birthday-frontend.netlify.app")
 public class WishController {
 
     private final WishRepository wishRepository;
